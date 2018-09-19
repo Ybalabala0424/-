@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add/add",
+    "pages/infor/infor",
+    "pages/noinfor/noinfor"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TODO List",
+    "navigationBarTextStyle": "black"
+  }
+}

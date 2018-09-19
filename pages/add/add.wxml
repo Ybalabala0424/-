@@ -1,0 +1,29 @@
+<!--pages/add/add.wxml-->
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd"></view>
+    <view class="weui-cell__bd">
+      <input type='text' class="weui-input" name='taskName' placeholder="任务名称（必填)" bindinput="taskNameInput"/>
+    </view>
+  </view>
+</view>      
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+     <input class="weui-textarea" type='text' name="taskInfor" placeholder="任务内容（选填）" bindinput="taskInforInput"  style="height: 3.3em" />
+    </view>
+  </view>
+</view>
+<view class="weui-cell weui-cell_input">
+  <view class="weui-cell__hd">
+  </view>
+  <view class="weui-cell__bd" style="height: 2.5em">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">{{array[index]}}
+      </view>
+    </picker>
+  </view>
+</view>
+<view class="button-sp-area">
+  <button class="weui-btn btn" type="primary" bindtap='refresh'>确定</button>
+</view>

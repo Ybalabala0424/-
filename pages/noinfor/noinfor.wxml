@@ -1,0 +1,15 @@
+<!--pages/noinfor/noinfor.wxml-->
+<!--pages/infor/infor.wxml-->
+<view class="nameArea">
+  <text class="taskName">任务名称：{{taskName}}</text>
+</view>
+<view class="inforArea">
+  <text class="taskInfor">任务内容：{{taskInfor}}</text>
+</view>
+<view class="labelArea">
+  <text class="taskLabel">任务标签：{{taskLabel}}</text>
+</view>
+<view class="doArea">
+  <text class="taskDo">完成情况：{{taskDo}}</text>
+</view>
+<button class="weui-btn" type="warn" bindtap='deleteTask'>删除任务</button>

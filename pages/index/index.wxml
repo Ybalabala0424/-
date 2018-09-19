@@ -1,0 +1,29 @@
+<view class="taskList">
+  <view class="font">{{time}}</view>
+  <block wx:for="{{doList}}" wx:for-item="do">
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="../infor/infor?key={{do.key}}">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">{{do.name}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    </navigator>
+  </view>  
+  </block>
+  <button class="weui-btn" type="primary"  plain="true"  bindtap="btn">{{showView?'隐藏历史任务':'显示历史任务'}}</button>
+  <block wx:for="{{notToDo}}" wx:for-item="not">
+  <view class="weui-cells weui-cells_after-title">
+  <navigator url="../noinfor/noinfor?key={{not.key}}">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">{{not.name}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </navigator>
+  </view>  
+  </block>
+  <navigator url="../add/add" >
+    <view >
+      <image class="add_icon" src="../../icon/add.png"></image>
+    </view>
+  </navigator>
+</view>
